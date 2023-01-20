@@ -1,5 +1,6 @@
 @use './utils/vars' as *;
-@use './utils/global' as *;
+@use './utils/mixins' as *;
+@import './utils/global';
 @import './components/header';
 @import './components/logo';
 @import './components/main-section';
@@ -13,3 +14,4 @@
 @import './components/form';
 @import './components/filter';
 @import './components/projects';
+@import './components/menu';
