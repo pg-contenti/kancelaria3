@@ -1,0 +1,59 @@
+.backdrop {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.is-hidden {
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    transition-delay: 500ms;
+}
+.is-hidden .modal {
+    transform: translateY(-150%);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.modal {
+    position: relative;
+    width: 528px;
+    min-height: 581px;
+    background-color: var(--brand-color-white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transform: translateY(0);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    z-index: 10;
+
+    &__close {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: var(--brand-color-white);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    &__header {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--brand-color-black2);
+        padding-top: 40px;
+        margin-bottom: 12px;
+    }
+}

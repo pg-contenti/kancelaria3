@@ -1,0 +1,55 @@
+.main-section {
+    background-color: var(--brand-color-dark);
+    background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/background-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding-top: 106px;
+        padding-bottom: 106px;
+    }
+
+    &__title {
+        color: var(--brand-color-white);
+        font-size: 44px;
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+    }
+
+    &__button {
+        background-color: var(--brand-color-blue);
+        color: var(--brand-color-white);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.62;
+        text-align: center;
+        letter-spacing: 0.03em;
+        border: none;
+        cursor: pointer;
+        padding: 10px 41px 10px 42px;
+        border-radius: 4px;
+        transition-property: background-color, color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__button:is(:hover, :focus, :active) {
+        outline: none;
+        background-color: var(--brand-color-white);
+
+        color: var(--brand-color-blue);
+    }
+}
