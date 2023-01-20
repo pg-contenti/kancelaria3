@@ -28,6 +28,9 @@
 
         text-decoration: none;
     }
+    &__nav-list:first-child {
+        color: var(--brand-color-blue);
+    }
 }
 
 @media (max-width: 767px) {
