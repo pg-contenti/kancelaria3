@@ -51,7 +51,6 @@
 
     &--active {
         color: var(--brand-color-blue);
-        fill: var(--brand-color-blue);
     }
 
     &__contacts-link {
@@ -60,7 +59,20 @@
         letter-spacing: 0.02em;
         padding-bottom: 32px;
     }
-
+    &__contacts-link--tel {
+        color: var(--brand-color-blue);
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+    }
+    &__contacts-link--email {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        color: var(--brand-color-gray2);
+    }
     &__social-media {
         display: flex;
     }
@@ -73,7 +85,19 @@
         line-height: 1.22;
         letter-spacing: 0.02em;
     }
-    &__social-media-line {
-        color: rgba(33, 33, 33, 0.2);
+
+    &__social-media-link--padding-right {
+        padding-right: 10px;
+    }
+
+    &__social-media-link--padding-left {
+        padding-left: 10px;
+    }
+
+    &__social-media-link--border {
+        border-left: 1px solid rgba(33, 33, 33, 0.2);
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
