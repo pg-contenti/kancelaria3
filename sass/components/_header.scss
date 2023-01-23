@@ -24,11 +24,10 @@
         }
         @include desktop {
         }
+    }
 
-        &:hover,
-        &:focus {
-            fill: var(--brand-color-blue);
-        }
+    &__menu-btn:is(:hover, :focus) {
+        fill: var(--brand-color-blue);
     }
 
     &__wrapper {
