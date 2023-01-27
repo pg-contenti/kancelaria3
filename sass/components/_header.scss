@@ -43,17 +43,22 @@
     &__nav {
         align-items: center;
         justify-content: space-between;
-        gap: 93px;
+
         outline: none;
+        display: flex;
         @include tablet {
+            gap: 83px;
         }
         @include desktop {
+            gap: 93px;
         }
     }
 
     &__nav-list {
         display: none;
         @include tablet {
+            display: flex;
+            gap: 60px;
         }
         @include desktop {
             display: flex;
@@ -101,15 +106,25 @@
         display: flex;
         justify-content: center;
         position: absolute;
-        top: 48px;
+
         border-radius: 2px;
+        @include tablet {
+            top: 43px;
+        }
+        @include desktop {
+            top: 47px;
+        }
     }
 
     &__contacts {
         display: none;
         @include tablet {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
         @include desktop {
+            flex-direction: row;
             display: flex;
             gap: 50px;
         }
@@ -119,8 +134,7 @@
         color: var(--brand-color-gray2);
         font-style: normal;
         font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
+
         letter-spacing: 0.02em;
         text-decoration: none;
         outline: none;
@@ -129,8 +143,12 @@
         fill: currentColor;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         @include tablet {
+            font-size: 12px;
+            line-height: 1.16;
         }
         @include desktop {
+            font-size: 14px;
+            line-height: 1.14;
         }
     }
 
