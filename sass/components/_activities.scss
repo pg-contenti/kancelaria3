@@ -32,6 +32,11 @@
             text-transform: uppercase;
             color: var(--brand-color-white);
             align-content: center;
+
+            @include tablet {
+            }
+            @include desktop {
+            }
         }
     }
 }
