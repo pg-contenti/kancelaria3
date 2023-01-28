@@ -18,6 +18,10 @@
 
     &__image {
         display: block;
+        @include desktop {
+            width: 270px;
+            height: 260px;
+        }
     }
 
     &__name {
