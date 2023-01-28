@@ -7,10 +7,13 @@
         justify-content: center;
         gap: 30px;
         padding-top: 50px;
+        flex-wrap: wrap;
+
+        flex-basis: 50%;
     }
 
     &__item {
-        width: 170px;
+        width: 210px;
         height: 92px;
         border: 1px solid var(--brand-color-gray3);
         display: flex;
@@ -22,6 +25,16 @@
         transition-property: border-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        @include tablet {
+            width: 226px;
+            height: 92px;
+        }
+
+        @include desktop {
+            width: 170px;
+            height: 92px;
+        }
     }
 
     &__item:is(:hover, :focus) {
