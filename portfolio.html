@@ -26,6 +26,27 @@
     </head>
     <body class="portfolio-background">
         <header class="header">
+            <!-- ------------MOBILE MENU---------------------------------------------------------------- -->
+
+            <button
+                class="header__menu-btn js-open-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+            >
+                <svg
+                    width="40"
+                    height="40"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="header__menu-btn-svg"
+                >
+                    <use href="images/icons.svg#icon-mobile-menu"></use>
+                </svg>
+            </button>
+
+            <!-- ------------MOBILE MENU---------------------------------------------------------------- -->
+
             <div class="container header__wrapper">
                 <nav class="header__nav">
                     <a class="logo" href="index.html">
@@ -468,5 +489,87 @@
                 </form>
             </div>
         </footer>
+        <!-- -------------MOBILE MENU MODAL------------------------------------------------------------------------------------ -->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-container__close js-close-menu">&times;</button>
+
+            <ul class="menu-container__nav-list">
+                <li class="menu-container__nav-item">
+                    <a class="menu-container__nav-link" href="index.html"
+                        >Agencja</a
+                    >
+                </li>
+
+                <li class="menu-container__nav-item">
+                    <a
+                        class="menu-container__nav-link menu-container--active"
+                        href="portfolio.html"
+                        >Portfolio</a
+                    >
+                </li>
+
+                <li class="menu-container__nav-item">
+                    <a class="menu-container__nav-link" href="contact.html"
+                        >Kontakt</a
+                    >
+                </li>
+            </ul>
+
+            <div class="menu-container__wrapper">
+                <div class="menu-container__contacts">
+                    <a
+                        class="menu-container__contacts-link menu-container__contacts-link--tel"
+                        href="tel:+48111111111"
+                    >
+                        +48 111 111 111
+                    </a>
+                    <a
+                        class="menu-container__contacts-link menu-container__contacts-link--email"
+                        href="mailto:info@devstudio.com"
+                    >
+                        info@devstudio.com</a
+                    >
+                </div>
+                <ul class="menu-container__social-media">
+                    <li class="menu-container__social-media-item">
+                        <a
+                            class="menu-container__social-media-link menu-container__social-media-link--padding-right"
+                            href="#instagram.html"
+                            >Instagram</a
+                        >
+                    </li>
+                    <li class="menu-container__social-media-item">
+                        <a
+                            class="menu-container__social-media-link menu-container__social-media-link--border"
+                            href="#twitter.html"
+                            >Twitter</a
+                        >
+                    </li>
+                    <li class="menu-container__social-media-item">
+                        <a
+                            class="menu-container__social-media-link menu-container__social-media-link--border"
+                            href="#facebook.html"
+                            >Facebook</a
+                        >
+                    </li>
+                    <li class="menu-container__social-media-item">
+                        <a
+                            class="menu-container__social-media-link menu-container__social-media-link--padding-left"
+                            href="#linkedin.html"
+                            >Linkedin</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"
+        ></script>
+        <script defer src="js/mobile-menu.js"></script>
+        <!-- MODAL SKRIPT------------------------------------------------------------------------------------         -->
     </body>
 </html>
