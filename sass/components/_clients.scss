@@ -8,12 +8,11 @@
         gap: 30px;
         padding-top: 50px;
         flex-wrap: wrap;
-
-        flex-basis: 50%;
     }
 
     &__item {
-        width: 210px;
+        width: 100%;
+        max-width: 210px;
         height: 92px;
         border: 1px solid var(--brand-color-gray3);
         display: flex;
