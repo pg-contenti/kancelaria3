@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: space-between;
 
-    transform: translateX(100%);
+    transform: translateX(150%);
     transition: transform 250ms ease-in-out;
 
     &.is-open {
