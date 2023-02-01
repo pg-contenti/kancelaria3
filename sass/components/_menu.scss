@@ -4,7 +4,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 48px 40px 48px 40px;
+
     background-color: var(--brand-color-white);
     z-index: 999;
     display: flex;
@@ -41,8 +41,11 @@
         display: flex;
         flex-direction: column;
         gap: 32px;
+        padding: 48px 40px 48px 40px;
     }
-
+    &__contacts {
+        padding: 48px 40px 48px 40px;
+    }
     &__nav-link,
     &__contacts-link {
         color: var(--brand-color-black);
@@ -75,6 +78,8 @@
     }
     &__social-media {
         display: flex;
+        justify-content: center;
+        padding-bottom: 48px;
     }
 
     &__social-media-link {
