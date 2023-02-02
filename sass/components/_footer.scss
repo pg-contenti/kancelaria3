@@ -85,7 +85,23 @@
         align-content: center;
 
         @include desktop {
+            align-items: flex-start;
             width: 570px;
+        }
+    }
+    &__newsletter-label {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--brand-color-white);
+        margin-bottom: 20px;
+        margin-top: 12px;
+
+        @include desktop {
+            display: flex;
+            justify-content: flex-start;
         }
     }
 
