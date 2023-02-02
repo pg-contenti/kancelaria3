@@ -16,6 +16,7 @@
         @include desktop {
             gap: 70px;
             text-align: left;
+            flex-wrap: nowrap;
         }
     }
 
@@ -26,6 +27,10 @@
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: var(--brand-color-white);
+
+        @include desktop {
+            flex-wrap: nowrap;
+        }
     }
     &__address-inherit {
         font-style: inherit;
@@ -78,7 +83,12 @@
         flex-direction: column;
         align-items: center;
         align-content: center;
+
+        @include desktop {
+            width: 570px;
+        }
     }
+
     &__email-input {
         background: none;
         width: 100%;
@@ -101,6 +111,7 @@
         @include desktop {
             width: 358px;
             height: 50px;
+            margin-right: 207px;
         }
     }
     &__email-input::placeholder {
