@@ -27,6 +27,9 @@
         letter-spacing: 0.03em;
         color: var(--brand-color-white);
     }
+    &__address-inherit {
+        font-style: inherit;
+    }
 
     &__address-city {
         margin-top: 20px;

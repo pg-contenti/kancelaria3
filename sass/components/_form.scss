@@ -108,7 +108,20 @@
         letter-spacing: 0.03em;
         color: var(--brand-color-gray2);
     }
-
+    &__policy-inherit {
+        flex-direction: inherit;
+        margin-top: inherit;
+        position: inherit;
+        justify-content: inherit;
+        align-content: inherit;
+        display: inherit;
+        gap: inherit;
+        font-weight: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        letter-spacing: inherit;
+        color: inherit;
+    }
     &__checkbox {
         appearance: none;
     }
